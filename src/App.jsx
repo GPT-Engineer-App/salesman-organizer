@@ -42,7 +42,8 @@ const App = () => {
         <Toaster />
         <Router>
           <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Index />} />
+            <Route path="/dashboard" element={<Layout />}>
               <Route index element={<Dashboard />} />
               <Route path="clients" element={<Clients />} />
               <Route path="tasks" element={<Tasks />} />
